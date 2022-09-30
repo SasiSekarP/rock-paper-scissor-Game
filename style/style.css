@@ -65,6 +65,43 @@ body{
     margin: 1rem 0rem;
 }
 
+.none{
+    display: none;
+}
+
+.hiding{
+    visibility: hidden;
+}
+
+.GameOver{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons{
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.continue-btn{
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 6px;
+    color: white;
+    background-color: rgba(16, 14, 16, 0.7);
+    border: 0px;
+}
+
+.continue-btn:hover{
+    color: rgb(16, 14, 16);
+    background-color: white;
+}
+
 @media screen and (max-width: 426px) {
     .card{
         width: 300px;
