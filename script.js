@@ -31,7 +31,6 @@ function playGame(choice) {
         if (computerChoice === 'paper') {
             document.getElementById('result').textContent = 'computer get 1 point';
             computerScore++;
-            computerScore++;
             document.getElementById('computerScore').textContent = computerScore;
         } else {
             document.getElementById('result').textContent = 'You get 1 point';
