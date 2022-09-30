@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div class="card">
+    <div class="card" id="card">
         <div class="title"><h1>Rock Paper Scissor</h1></div>
         <div class="score-container">
             <div class="yourScore-card">
@@ -34,19 +34,18 @@
         <div class="result-container" id="result-container">
             <p><span id="result"></span></p>
         </div>
-        <div class="GameOver hiding" id="GameOver">
-            <p>Game Over. 
-                You <span id="FinalResult"></span> !!!
+        <div class="none" id="GameOver">
+            <p>Game Over. You <span id="FinalResult"></span> !!!
             </p>
             <p>Do you want to continue ?</p>
             <div class="buttons">
                 <button class="continue-btn" onclick="location.reload()">Yes</button>
-                <button class="continue-btn" onclick="location.reload()">No</button>
+                <button class="continue-btn" onclick="NoChoice()">No</button>
             </div>
         </div>
-        <div class="no none" id="no">
-            <h1>Thank you for playing</h1>
-        </div>
+    </div>
+    <div class="ThankYouCard none" id="ThankYouCard">
+        <h2>Thank you for playing</h2>
     </div>
     <script src="./script.js"></script>
 </body>

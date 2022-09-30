@@ -12,6 +12,7 @@ body{
     background-image: url('https://cdn.vectorstock.com/i/1000x1000/73/81/rock-paper-scissors-background-vector-23267381.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
 .card{
@@ -24,6 +25,19 @@ body{
     padding: 1rem;
     box-shadow: 5px 5px 1rem rgb(0, 0, 3);
     width: 500px;
+}
+
+.ThankYouCard{
+    background-color: rgba(37, 31, 52, 0.95);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 1rem rgb(0, 0, 3);
+    width: 500px;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 .title{
@@ -67,10 +81,6 @@ body{
 
 .none{
     display: none;
-}
-
-.hiding{
-    visibility: hidden;
 }
 
 .GameOver{

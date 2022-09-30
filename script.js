@@ -2,6 +2,10 @@
 
 const optionsEl = document.getElementById('options');
 
+const ThankYouCardEl = document.getElementById('ThankYouCard');
+
+const cardEl = document.getElementById('card');
+
 const GameOverEl = document.getElementById('GameOver');
 
 const resultContainerEl = document.getElementById('result-container');
@@ -65,13 +69,18 @@ function playGame(choice) {
     if (yourScore >= 10) {
         document.getElementById('FinalResult').textContent = "Won";
         optionsEl.classList.add('none');
-        GameOverEl.classList.remove('hiding');
-        resultContainerEl.classList.add('hiding');
+        GameOverEl.classList.replace('none','GameOver');
+        resultContainerEl.classList.add('none');
     }
     if (computerScore >= 10) {
         document.getElementById('FinalResult').textContent = "Lost";
         optionsEl.classList.add('none');
-        GameOverEl.classList.remove('hiding');
-        resultContainerEl.classList.add('hiding');
+        GameOverEl.classList.replace('none','GameOver');
+        resultContainerEl.classList.add('none');
     }
+}
+
+function NoChoice(){
+    cardEl.classList.add('none');
+    ThankYouCardEl.classList.remove('none')
 }
