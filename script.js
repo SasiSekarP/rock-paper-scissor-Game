@@ -55,7 +55,6 @@ function playGame(choice) {
             document.getElementById('result').textContent = 'computer get 1 point';
             computerScore++;
             document.getElementById('computerScore').textContent = computerScore;
-            computerScore++;
         } else {
             document.getElementById('result').textContent = 'You get 1 point';
             yourScore++;
